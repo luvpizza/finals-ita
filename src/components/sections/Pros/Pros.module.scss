@@ -1,0 +1,21 @@
+@import "../../../styles/_variables.scss";
+.pros {
+    padding: 80px 0;
+    &__title{
+        font-weight: normal;
+        font-size: 36px;
+        padding: 10px 25px;
+    }
+    &__list{
+        padding: 40px 0;
+        width: 100%;
+        @include flex-centered;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+.container{
+    @include container;
+    @include flex-centered;
+    flex-direction: column;
+}

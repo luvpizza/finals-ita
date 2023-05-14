@@ -1,0 +1,12 @@
+.text__input{
+    padding: 10px 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        font-weight: 300;
+        color: #A3A3A3;
+    }
+}

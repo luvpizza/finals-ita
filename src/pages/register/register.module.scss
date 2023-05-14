@@ -1,0 +1,33 @@
+@import "../../styles/variables";
+.register{
+    padding: 150px 0 0;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(106, 146, 198, 0.651), rgba(106, 146, 198, 0.452)), url('./../../assets/images/register_bg.jpg') center/cover;
+    &__content{
+        margin: 0 auto;
+        width: max-content;
+    }
+    &__btn{
+        &s{
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            > button{
+                background: #fff;
+                border-radius: 5px;
+                padding: 10px;
+                border: 1px solid #c5c5c5;
+                
+            }
+        }
+        &_selected{
+            cursor: default;
+            color: $primary-blue;
+            border: 1px solid $primary-blue !important;
+            box-shadow: 2px 2px 5px 0px $primary-blue;
+        }
+        &_unselected{
+            color: #c5c5c5;
+        }
+    }
+}

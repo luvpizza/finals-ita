@@ -1,0 +1,42 @@
+@import "./../../styles/variables";
+.pros{
+    &__card{
+        width: 100%;
+        padding: 25px 15px;
+        color: #fff;
+        background: linear-gradient(99deg, rgb(144, 173, 253) 1%, $lighter-blue 80%);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 5px;
+        box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        max-width: 780px;
+        gap: 20px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    &__description{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__icon{
+        background: #fff;
+        height: 120px;
+        width: 120px;
+        border-radius: 15px;
+        @include flex-centered;
+        & > img{
+            opacity: 0.15;
+            height: 50%;
+            width: 50%;
+        }
+    }
+}

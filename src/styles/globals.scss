@@ -1,0 +1,30 @@
+@import "./variables";
+@import "./fonts";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input {
+    background: none;
+    border: none;
+    &:focus {
+        outline: none !important;
+    }
+}
+button {
+    cursor: pointer;
+    font: inherit;
+    background: none;
+    border: none;
+}

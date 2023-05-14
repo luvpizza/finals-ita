@@ -1,0 +1,13 @@
+@import "./../../../styles/variables";
+
+.find {
+    height: 680px;
+    background: linear-gradient(0deg, rgba(106, 146, 198, 0.541), rgba(106, 146, 198, 0.452)), url("../../../assets/images/landing_hero.jpg") bottom/cover no-repeat fixed;
+    @include flex-centered
+}
+.hero {
+    &_btn{
+        font-size: 24px;
+        padding: 22px 32px;
+    }
+}

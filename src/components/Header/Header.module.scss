@@ -1,0 +1,19 @@
+@import "./../../styles/variables";
+
+.header {
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    background: $primary-blue;
+    height: 60px;
+}
+.container {
+    @include flex-between;
+    @include container($width-def);
+}
+.logo {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.09em;
+}

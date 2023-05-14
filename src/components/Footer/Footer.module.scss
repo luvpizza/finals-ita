@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+.footer{
+    background: $primary-blue;
+    height: 80px;
+    color: #fff;
+    &__text{
+        @include flex-centered;
+        flex-direction: column;
+    }
+    &__logo{
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: -0.09em;
+    }
+}
+.container{
+    @include container;
+    @include flex-centered
+}

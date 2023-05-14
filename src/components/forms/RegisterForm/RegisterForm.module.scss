@@ -1,0 +1,12 @@
+.register{
+    &__form{
+        background: #fff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 450px;
+        padding: 25px;
+        gap: 15px;
+    }
+}

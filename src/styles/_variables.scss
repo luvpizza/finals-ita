@@ -1,0 +1,19 @@
+$primary-blue: #3F6CA7;
+$lighter-blue: #6495D6;
+$width-def: 1100px;
+
+@mixin flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin container($mx1: $width-def){
+    margin: 0 auto;
+    height: 100%;
+    max-width: $mx1;
+}
