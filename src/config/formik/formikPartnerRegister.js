@@ -9,7 +9,7 @@ export const formikPartnerRegister = {
         confirmPassword: ""
     },
     onSubmit: (values) => {
-        console.log("your values: ", values);
+        console.log("your valuesP: ", values);
     },
     validationSchema: Yup.object({
         firstName: Yup

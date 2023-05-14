@@ -1,6 +1,11 @@
 $primary-blue: #3F6CA7;
+$primary-blue-opacity-30: #3f6ca74b;
+$dark-blue: #1f4b85;
 $lighter-blue: #6495D6;
+$error: rgb(255, 30, 30);
+$not-quite-white: rgb(250, 250, 250);
 $width-def: 1100px;
+
 
 @mixin flex-centered {
     display: flex;

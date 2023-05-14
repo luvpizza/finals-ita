@@ -35,8 +35,8 @@ const Register = () => {
                     </div>
 
                     {registerType
-                        ? <RegisterForm config={formikClientRegister}/>
-                        : <RegisterForm config={formikPartnerRegister}/>}
+                        ? <RegisterForm type="client" config={formikClientRegister}/>
+                        : <RegisterForm type="partner" config={formikPartnerRegister}/>}
                 </div>
             </section>
             <Footer/>
