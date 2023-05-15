@@ -1,0 +1,54 @@
+@import "./../../styles/variables";
+.searchbar {
+    @include flex-centered;
+    font: inherit !important;
+    padding: 20px 25px;
+    background: $not-quite-white;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px 2px $primary-blue;
+    width: max-content;
+    gap: 5px;
+    transition: 0.15s;
+}
+.sb {
+    &__input {
+        width: 240px;
+        @include searchbar-input;
+        text-align: left !important;
+        border-top-left-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;
+    }
+    &__rangepicker {
+        width: 400px;
+        border-radius: 0 !important;
+        padding: 0 10px !important;
+        font-family: inherit !important;
+        & > div {
+            padding: 0 !important;
+            > input {
+                padding: 0 !important;
+                @include searchbar-input;
+            }
+        }
+    }
+    &__select {
+        width: 140px;
+        & > div {
+            @include searchbar-input;
+            height: 40px !important;
+            border-top-right-radius: 5px !important;
+            border-bottom-right-radius: 5px !important;
+        }
+    }
+    &__btn_search {
+        color: #fff;
+        background: $lighter-blue;
+        height: 40px;
+        width: 90px;
+        border-radius: 5px;
+        transition: 0.15s;
+        &:hover {
+            background: $primary-blue;
+        }
+    }
+}

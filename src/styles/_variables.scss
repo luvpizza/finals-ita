@@ -1,12 +1,11 @@
-$primary-blue: #3F6CA7;
+$primary-blue: #3f6ca7;
 $primary-blue-opacity-30: #3f6ca74b;
 $dark-blue: #1f4b85;
-$lighter-blue: #6495D6;
+$lighter-blue: #6495d6;
 $error: rgb(255, 30, 30);
 $not-quite-white: rgb(250, 250, 250);
 $width-def: 1100px;
-
-
+$outline-def: #d9d9d9;
 @mixin flex-centered {
     display: flex;
     justify-content: center;
@@ -17,8 +16,113 @@ $width-def: 1100px;
     justify-content: space-between;
     align-items: center;
 }
-@mixin container($mx1: $width-def){
+@mixin container($mx1: $width-def) {
     margin: 0 auto;
     height: 100%;
     max-width: $mx1;
+}
+@mixin form-misc {
+    .form {
+        &__error {
+            font-size: 12px;
+            color: $error;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__inputs {
+            display: flex;
+            flex-direction: column;
+            & > input {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+@mixin form-style {
+    border: 1px solid lightgrey;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    gap: 15px;
+    box-shadow: 12px 12px 8px 0 $primary-blue-opacity-30;
+}
+@mixin form-misc {
+    .form {
+        &__error {
+            font-size: 12px;
+            color: $error;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__inputs {
+            display: flex;
+            flex-direction: column;
+            & > input {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+@mixin submit-btn {
+    .btn {
+        &__submit {
+            padding: 10px 0;
+            font-weight: 600;
+            border-radius: 5px;
+            color: #fff;
+            background: $primary-blue;
+            border: 1px solid $primary-blue;
+            transition: 0.15s;
+            &:hover {
+                background: #fff;
+                color: $primary-blue;
+                border: 1px solid $primary-blue;
+            }
+        }
+    }
+}
+@mixin member-link {
+    .member {
+        width: max-content;
+        margin-top: 5px;
+        font-size: 14px;
+        color: $dark-blue;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0);
+        &:hover {
+            color: $primary-blue;
+            border-bottom: 2px dotted $dark-blue;
+        }
+    }
+}
+@mixin antd-reset {
+    &:hover {
+        border: 1px solid $outline-def !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+        border: 1px solid $outline-def !important;
+    }
+}
+@mixin searchbar-input {
+    font-family: inherit;
+    background: #fff !important;
+    font-size: 18px !important;
+    padding: 5px !important;
+    border-radius: 0px !important;
+    &:hover {
+        // border: 1px solid $outline-def !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+        // border: none !important;
+    }
 }

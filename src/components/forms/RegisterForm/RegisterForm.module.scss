@@ -1,19 +1,8 @@
 @import "../../../styles/variables";
+@include form-misc;
+@include submit-btn;
+@include member-link;
 .form{
-    &__error{
-        font-size: 12px;
-        color: $error;
-    }
-    &__title{
-        text-align: center;
-    }
-    &__inputs{
-        display: flex;
-        flex-direction: column;
-        & > input{
-            margin-bottom: 10px;
-        }
-    }
     &__datepicker{
         margin-bottom: 10px;
         font: inherit;
@@ -34,44 +23,8 @@
 }
 .register{
     &__form{
-        border: 1px solid lightgrey;
-        background: #fff;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
+        @include form-style;
         width: 450px;
-        padding: 25px 30px;
-        gap: 15px;
-        box-shadow: 12px 12px 8px 0px $primary-blue-opacity-30;
     }
 }
-.btn{
-    &__submit{
-        padding: 10px 0;
-        font-weight: 600;
-        border-radius: 5px;
-        color: #fff;
-        background: $primary-blue;
-        border: 1px solid $primary-blue;
-        transition: .15s;
-        &:hover{
-            background: #fff;
-            color: $primary-blue;
-            border: 1px solid $primary-blue;
-        }
-    }
-}
-.member{
-    width: max-content;
-    margin-top: 5px;
-    font-size: 14px;
-    color: $dark-blue;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-    &:hover{
-        color: $primary-blue;
-        border-bottom: 2px dotted $dark-blue;
-    }
-}
+

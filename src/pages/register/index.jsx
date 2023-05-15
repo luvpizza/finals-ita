@@ -13,7 +13,6 @@ const Register = () => {
         e.preventDefault();
         setRegisterType(type);
     }
-
     return (
         <div>
             <Header/>
@@ -35,7 +34,7 @@ const Register = () => {
                     </div>
 
                     {registerType
-                        ? <RegisterForm type="client" config={formikClientRegister}/>
+                        ? <RegisterForm type="client" config={formikClientRegister} />
                         : <RegisterForm type="partner" config={formikPartnerRegister}/>}
                 </div>
             </section>

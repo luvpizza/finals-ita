@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@include form-misc;
+.login{
+    min-height: 100vh;
+    padding: 90px 0 90px;
+    background: $not-quite-white;
+    &__content {
+        margin: 0 auto;
+        width: max-content;
+    }
+}

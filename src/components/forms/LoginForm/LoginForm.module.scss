@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+@include form-misc;
+@include submit-btn;
+@include member-link;
+.form {
+    &__title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+.login {
+    &__form {
+        @include form-style;
+        width: 420px;
+        padding-bottom: 40px;
+    }
+}
+.btn {
+    &__submit{
+        margin-top: 15px;
+    }
+}
+.member{
+    margin-top: 15px;
+    align-self: flex-end;
+}

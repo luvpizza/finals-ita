@@ -43,6 +43,9 @@ const RegisterForm = ({config, type}) => {
                 value={formik.values.email} 
                 onChange={formik.handleChange}/>
 
+                {formik.touched.dateOfBirth && formik.errors.dateOfBirth
+                    ? <p className={s.form__error}>{formik.errors.dateOfBirth}</p>
+                    : null}
                 <DatePicker className={s.form__datepicker}
                 format={'DD / MM / YYYY'}
                 name='dateOfBirth'
