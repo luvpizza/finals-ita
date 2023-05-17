@@ -126,3 +126,8 @@ $outline-def: #d9d9d9;
         // border: none !important;
     }
 }
+
+@mixin grid-col-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

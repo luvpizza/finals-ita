@@ -1,7 +1,7 @@
 @import "./../../../styles/variables";
 .search {
     height: 320px;
-    background: linear-gradient(0deg, rgba(106, 146, 198, 0.541), rgba(106, 146, 198, 0.9)), url("../../../assets/images/landing_hero.jpg") bottom/cover no-repeat fixed;
+    background: linear-gradient(0deg, rgba(106, 146, 198, 0.541), rgba(106, 146, 198, 0.9)), url("../../../assets/images/searchpg-bg.png") bottom/cover no-repeat fixed;  
     @include flex-centered;
     flex-direction: column;
     gap: 30px;

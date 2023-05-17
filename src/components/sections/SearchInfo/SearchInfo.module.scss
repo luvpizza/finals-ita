@@ -1,0 +1,30 @@
+@import "./../../../styles/variables";
+
+.container{
+    @include container;
+    @include flex-centered;
+    flex-direction: column;
+}
+.search{
+    &__info{
+        background: $not-quite-white;
+        padding: 80px 0;
+    }
+}
+.info{
+    &__title{
+        font-size: 28px;
+        font-weight: normal;
+    }
+    &__grid{
+        margin-top: 100px;
+        @include grid-col-4;
+        width: 100%;
+        gap: 20px;
+    }
+    &__card{
+        height: 250px;
+        border-radius: 10px;
+        background: $primary-blue;
+    }
+}

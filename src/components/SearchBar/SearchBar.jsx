@@ -28,7 +28,6 @@ const SearchBar = ({config}) => {
     const handleDatesChange = (value) => {
         formik.setFieldValue("dates", value)
     }
-
     return (
         <form onSubmit={formik.handleSubmit} className={s.searchbar}>
             <Input
@@ -46,6 +45,9 @@ const SearchBar = ({config}) => {
                 format="DD.MM.YYYY"
                 disabledDate={disabledDate}></RangePicker>
             <Select
+                name='numberOfPeople'
+                value={formik.values.numberOfPeople}
+                onChange={value=>formik.setFieldValue('numberOfPeople',value)}
                 className={s.sb__select}
                 options={personOptions}
                 placeholder="Кол-во чел."/>

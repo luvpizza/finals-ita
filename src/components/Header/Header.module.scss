@@ -17,3 +17,10 @@
     line-height: 44px;
     letter-spacing: -0.09em;
 }
+.to{
+    &__login{
+        border: 1px solid #fff;
+        padding: 10px 25px;
+        border-radius: 5px;
+    }
+}
