@@ -1,8 +1,10 @@
 import {DatePicker} from 'antd'
 import {useFormik} from 'formik';
+
 import TextInput from '@/components/UI/inputs/TextInput/TextInput';
 import Link from 'next/link';
-import React, { useEffect } from 'react';
+import React from 'react';
+
 import s from './RegisterForm.module.scss'
 
 const RegisterForm = ({config, type}) => {

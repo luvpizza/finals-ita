@@ -1,0 +1,1 @@
+export const MOCKUP_URL = "http://localhost:5001"
