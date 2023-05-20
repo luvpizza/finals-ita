@@ -6,12 +6,12 @@ import Footer from '@/components/Footer/Footer';
 
 const Search = () => {
     return (
-        <div>
+        <>
             <Header/>
             <SearchMain/>
             <SearchInfo/>
             <Footer/>
-        </div>
+        </>
     );
 };
 

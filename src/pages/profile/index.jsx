@@ -3,6 +3,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import s from './profile.module.scss'
 import profileIcon from '@/assets/icons/profile-icon.svg'
+import ProfileHistory from '@/components/ProfileHistory/ProfileHistory';
 
 const Profile = () => {
 
@@ -15,6 +16,9 @@ const Profile = () => {
         }, {
             name: "История",
             id: 2
+        }, {
+            name: "Отзывы",
+            id: 3
         }
     ]
 
@@ -44,7 +48,7 @@ const Profile = () => {
                                 <h1 className={s.credentials__name}>Али Аюпов</h1>
                             </div>
                             {/* content */}
-                            <h1>content</h1>
+                            {navSelected === 1 ? "faves" : navSelected === 2 ? <ProfileHistory/> : ""}
                             {/* content */}
                         </div>
                     </div>
