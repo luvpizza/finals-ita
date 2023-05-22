@@ -1,12 +1,15 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import s from './profile.module.scss'
 import profileIcon from '@/assets/icons/profile-icon.svg'
 import ProfileHistory from '@/components/ProfileHistory/ProfileHistory';
+import { mockGetBookmarks } from '@/api/mock/mockGetBookmarks';
+import BookmarkContainer from '@/components/BookmarkContainer/BookmarkContainer';
 
 const Profile = () => {
-
+    // change mock to real API!
+    const [userBookmarks, setUserBookmarks] = useState([])
     const [navSelected,
         setNavSelected] = useState(1)
     const navElements = [
@@ -21,6 +24,11 @@ const Profile = () => {
             id: 3
         }
     ]
+
+    
+    useEffect(()=>{
+        mockGetBookmarks().then(res => setUserBookmarks(res))
+    },[])
 
     return (
         <div>
@@ -48,7 +56,7 @@ const Profile = () => {
                                 <h1 className={s.credentials__name}>Али Аюпов</h1>
                             </div>
                             {/* content */}
-                            {navSelected === 1 ? "faves" : navSelected === 2 ? <ProfileHistory/> : ""}
+                            {navSelected === 1 ? <BookmarkContainer bookmarks={userBookmarks}/> : navSelected === 2 ? <ProfileHistory/> : ""}
                             {/* content */}
                         </div>
                     </div>

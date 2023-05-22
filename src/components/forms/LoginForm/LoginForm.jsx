@@ -1,4 +1,5 @@
 import {useFormik} from 'formik';
+import { formikLogin } from '@/config/formik/formikLogin';
 
 import React from 'react';
 import TextInput from '@/components/UI/inputs/TextInput/TextInput';
@@ -6,8 +7,8 @@ import Link from 'next/link';
 
 import s from './LoginForm.module.scss'
 
-const LoginForm = ({config}) => {
-    const formik = useFormik(config)
+const LoginForm = () => {
+    const formik = useFormik(formikLogin)
     return (
         <form className={s.login__form} onSubmit={formik.handleSubmit}>
             <h1 className={s.form__title}>Войдите в профиль</h1>

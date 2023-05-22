@@ -1,21 +1,52 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
   "profile": {
     "firstName": "Vadim",
     "lastName": "Elistratov",
     "userId": 6
-  }
+  },
+  "bookmarks": [
+    {
+      "title": "Hotel Yawasaki",
+      "id": "1236",
+      "price": 1220,
+      "location": "New York City",
+      "mainImageURL": "https://www.rwlasvegas.com/wp-content/uploads/2022/05/crockfords-las-vegas-standard-deluxe-bedroom_1000x880.jpg"
+    },
+    {
+      "title": "Restaurant Jiro",
+      "id": "9874",
+      "price": 15500,
+      "location": "Tokyo",
+      "mainImageURL": "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"
+    },
+    {
+      "title": "Beach Resort Paradise",
+      "id": "5678",
+      "price": 600,
+      "location": "Maldives",
+      "mainImageURL": "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg"
+    },
+    {
+      "title": "Mountain Lodge Retreat",
+      "id": "2345",
+      "price": 150,
+      "location": "Switzerland",
+      "mainImageURL": "https://www.rwlasvegas.com/wp-content/uploads/2022/05/crockfords-las-vegas-standard-deluxe-bedroom_1000x880.jpg"
+    },
+    {
+      "title": "City Center Suites",
+      "id": "7890",
+      "price": 3225,
+      "location": "Paris",
+      "mainImageURL": "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"
+    },
+    {
+      "title": "Historic Bed and Breakfast",
+      "id": "4321",
+      "price": 1200,
+      "location": "London",
+      "mainImageURL": "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg"
+    }
+  ]
+  
 }

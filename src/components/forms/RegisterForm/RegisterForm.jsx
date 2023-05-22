@@ -75,7 +75,7 @@ const RegisterForm = ({config, type}) => {
 
             </div>
 
-            <button type='submit' className={s.btn__submit} onClick={formik.handleSubmit}>{type == "client" ? "Создать аккаунт" : "Стать партнером"}</button>
+            <button type='submit' className={s.btn__submit} onClick={formik.handleSubmit}>{type == "partner" ? "Стать партнером" : "Создать аккаунт"}</button>
 
             <Link className={s.member} href="/login">Есть аккаунт? Войдите</Link>
         </form>

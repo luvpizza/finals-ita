@@ -13,6 +13,7 @@
     }
     &__navbar{
         @include flex-centered;
+        justify-content: flex-start;
         flex-direction: column;
         color: #fff;
         border-top-left-radius: 10px;
@@ -66,7 +67,7 @@
     cursor: default;
     opacity: 1;
     &:hover{
-        // opacity: ;
+
     }
 }
 .credentials{
