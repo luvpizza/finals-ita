@@ -7,7 +7,7 @@ const BookmarkContainer = ({bookmarks}) => {
     return (
         <div className={s.bookmark__container}>
             <h1 className={s.bookmarks__title} style={{textAlign:"center"}}>Избранное</h1>
-            {bookmarks.length ?  
+            {bookmarks && bookmarks.length ?   
             bookmarks.map(bookmark => <Bookmark key={bookmark.id} photo={bookmark.mainImageURL} title={bookmark.title} url={bookmark.id} price={bookmark.price}/>)
             : "Не найдено"}
         </div>

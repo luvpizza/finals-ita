@@ -10,6 +10,7 @@
     "json-server": "json-server --w db.json --port 5001"
   },
   "dependencies": {
+    "@2gis/mapgl": "^1.36.0",
     "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.4.7",
     "axios": "^1.4.0",

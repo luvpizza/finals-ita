@@ -1,0 +1,2 @@
+// export const MAPGL_API_KEY = "358325bc-ca99-47e9-ba71-a8344f260515"
+export const MAPGL_API_KEY = "a1893935-6834-4445-b97a-3405fb426c5b"

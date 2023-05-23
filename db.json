@@ -1,52 +1,123 @@
 {
-  "profile": {
-    "firstName": "Vadim",
-    "lastName": "Elistratov",
-    "userId": 6
-  },
-  "bookmarks": [
-    {
-      "title": "Hotel Yawasaki",
-      "id": "1236",
-      "price": 1220,
-      "location": "New York City",
-      "mainImageURL": "https://www.rwlasvegas.com/wp-content/uploads/2022/05/crockfords-las-vegas-standard-deluxe-bedroom_1000x880.jpg"
+    "profile": {
+        "firstName": "Vadim",
+        "lastName": "Elistratov",
+        "userId": 6
     },
-    {
-      "title": "Restaurant Jiro",
-      "id": "9874",
-      "price": 15500,
-      "location": "Tokyo",
-      "mainImageURL": "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"
-    },
-    {
-      "title": "Beach Resort Paradise",
-      "id": "5678",
-      "price": 600,
-      "location": "Maldives",
-      "mainImageURL": "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg"
-    },
-    {
-      "title": "Mountain Lodge Retreat",
-      "id": "2345",
-      "price": 150,
-      "location": "Switzerland",
-      "mainImageURL": "https://www.rwlasvegas.com/wp-content/uploads/2022/05/crockfords-las-vegas-standard-deluxe-bedroom_1000x880.jpg"
-    },
-    {
-      "title": "City Center Suites",
-      "id": "7890",
-      "price": 3225,
-      "location": "Paris",
-      "mainImageURL": "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"
-    },
-    {
-      "title": "Historic Bed and Breakfast",
-      "id": "4321",
-      "price": 1200,
-      "location": "London",
-      "mainImageURL": "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg"
-    }
-  ]
-  
+    "bookmarks": [
+        {
+            "title": "Hotel Yawasaki",
+            "id": "1236",
+            "price": 1220,
+            "location": "New York City",
+            "mainImageURL": "https://www.rwlasvegas.com/wp-content/uploads/2022/05/crockfords-las-vegas-standard-deluxe-bedroom_1000x880.jpg"
+        }, {
+            "title": "Restaurant Jiro",
+            "id": "9874",
+            "price": 15500,
+            "location": "Tokyo",
+            "mainImageURL": "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"
+        }, {
+            "title": "Beach Resort Paradise",
+            "id": "5678",
+            "price": 600,
+            "location": "Maldives",
+            "mainImageURL": "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg"
+        }, {
+            "title": "Mountain Lodge Retreat",
+            "id": "2345",
+            "price": 150,
+            "location": "Switzerland",
+            "mainImageURL": "https://www.rwlasvegas.com/wp-content/uploads/2022/05/crockfords-las-vegas-standard-deluxe-bedroom_1000x880.jpg"
+        }, {
+            "title": "City Center Suites",
+            "id": "7890",
+            "price": 3225,
+            "location": "Paris",
+            "mainImageURL": "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"
+        }, {
+            "title": "Historic Bed and Breakfast",
+            "id": "4321",
+            "price": 1200,
+            "location": "London",
+            "mainImageURL": "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg"
+        }
+    ],
+    "results": [
+        {
+            "id": 274,
+            "title": "RWord Hotel",
+            "price": 12200,
+            "photos_url": ["https://www.example.com/pic1.jpg"],
+            "location": {
+                "city": "Bishkek",
+                "lon_lat": [74.6070, 42.8765]
+            },
+            "reviews": {
+                "count": 21,
+                "rating": 3.65
+            }
+        }, {
+            "id": 521,
+            "title": "Sunny Retreat",
+            "price": 8500,
+            "photos_url": [
+                "https://www.example.com/pic2.jpg", "https://www.example.com/pic3.jpg"
+            ],
+            "location": {
+                "city": "Bishkek",
+                "lon_lat": [74.5826, 42.8584]
+            },
+            "reviews": {
+                "count": 42,
+                "rating": 4.25
+            }
+        }, {
+            "id": 128,
+            "title": "Mountain View Lodge",
+            "price": 6500,
+            "photos_url": [
+                "https://www.example.com/pic4.jpg", "https://www.example.com/pic5.jpg", "https://www.example.com/pic6.jpg"
+            ],
+            "location": {
+                "city": "Bishkek",
+                "lon_lat": [74.5986, 42.8720]
+            },
+            "reviews": {
+                "count": 12,
+                "rating": 3.95
+            }
+        }, {
+            "id": 847,
+            "title": "Seaside Paradise Resort",
+            "price": 9800,
+            "photos_url": [
+                "https://www.example.com/pic7.jpg", "https://www.example.com/pic8.jpg"
+            ],
+            "location": {
+                "city": "Bishkek",
+                "lon_lat": [74.6022, 42.8488]
+            },
+            "reviews": {
+                "count": 37,
+                "rating": 4.10
+            }
+        }, {
+            "id": 632,
+            "title": "City Center Hotel",
+            "price": 7500,
+            "photos_url": [
+                "https://www.example.com/pic9.jpg", "https://www.example.com/pic10.jpg", "https://www.example.com/pic11.jpg"
+            ],
+            "location": {
+                "city": "Bishkek",
+                "lon_lat": [74.6032, 42.8764]
+            },
+            "reviews": {
+                "count": 56,
+                "rating": 4.50
+            }
+        }
+    ]
+
 }

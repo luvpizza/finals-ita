@@ -1,6 +1,12 @@
 @import "@/styles/variables";
 
 .results{
-    padding: 80px 0;
     min-height: 90vh;
+    &__grid{
+        display: grid;
+        grid-template-columns: 2.5fr 1.2fr;
+    }
+    &__list{
+        height: 800px;
+    }
 }
