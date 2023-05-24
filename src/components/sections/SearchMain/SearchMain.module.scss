@@ -6,7 +6,9 @@
     flex-direction: column;
     gap: 30px;
     &__title{
-        font-size: 28px;
-        color: #fff;
+        font-size: 32px;
+        color: #fff; 
+        font-weight: 700;
+        letter-spacing: 1px;
     }
 }

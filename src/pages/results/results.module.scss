@@ -1,12 +1,31 @@
 @import "@/styles/variables";
 
-.results{
-    min-height: 90vh;
-    &__grid{
+.results {
+    background: $not-quite-white;
+    position: relative;
+    
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    &__grid {
         display: grid;
         grid-template-columns: 2.5fr 1.2fr;
     }
-    &__list{
-        height: 800px;
+    &__list {
+        padding: 80px 20px;
+        min-height: 800px;
+        min-width: 775px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__sb {
+        transform: scale(0.9);
+        position: absolute !important;
+        top: -35px !important;
+        box-shadow: none !important;
+        border: 1px solid $primary-blue !important;
+        width: 800px !important;
     }
 }

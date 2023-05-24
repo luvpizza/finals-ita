@@ -46,23 +46,23 @@
     "results": [
         {
             "id": 274,
-            "title": "RWord Hotel",
+            "title": "Rotschild Hotel",
             "price": 12200,
-            "photos_url": ["https://www.example.com/pic1.jpg"],
+            "photos_url": ["https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"],
             "location": {
                 "city": "Bishkek",
                 "lon_lat": [74.6070, 42.8765]
             },
             "reviews": {
                 "count": 21,
-                "rating": 3.65
+                "rating": 3.35
             }
         }, {
             "id": 521,
             "title": "Sunny Retreat",
             "price": 8500,
             "photos_url": [
-                "https://www.example.com/pic2.jpg", "https://www.example.com/pic3.jpg"
+                "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg", "https://www.example.com/pic3.jpg"
             ],
             "location": {
                 "city": "Bishkek",
@@ -77,7 +77,7 @@
             "title": "Mountain View Lodge",
             "price": 6500,
             "photos_url": [
-                "https://www.example.com/pic4.jpg", "https://www.example.com/pic5.jpg", "https://www.example.com/pic6.jpg"
+                "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg", "https://www.example.com/pic5.jpg", "https://www.example.com/pic6.jpg"
             ],
             "location": {
                 "city": "Bishkek",
@@ -92,7 +92,7 @@
             "title": "Seaside Paradise Resort",
             "price": 9800,
             "photos_url": [
-                "https://www.example.com/pic7.jpg", "https://www.example.com/pic8.jpg"
+                "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg", "https://www.example.com/pic8.jpg"
             ],
             "location": {
                 "city": "Bishkek",
@@ -107,7 +107,7 @@
             "title": "City Center Hotel",
             "price": 7500,
             "photos_url": [
-                "https://www.example.com/pic9.jpg", "https://www.example.com/pic10.jpg", "https://www.example.com/pic11.jpg"
+                "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg", "https://www.example.com/pic10.jpg", "https://www.example.com/pic11.jpg"
             ],
             "location": {
                 "city": "Bishkek",

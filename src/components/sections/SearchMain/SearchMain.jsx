@@ -6,8 +6,8 @@ import s from './SearchMain.module.scss'
 const SearchMain = () => {
     return (
         <section className={s.search}>
-            <h1 className={s.search__title}>йоу йоу йоу йоу</h1>
-            <SearchBar config={formikSearchBar}/>
+            <h1 className={s.search__title}>Найдите и забронируйте номер в отеле</h1>
+            <SearchBar/>
         </section>
     );
 };

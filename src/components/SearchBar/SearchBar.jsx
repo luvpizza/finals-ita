@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import {DatePicker, Input, Select} from 'antd'
+import { formikSearchBar } from '@/config/formik/formikSearchBar';
 import {useFormik} from 'formik'
 import dayjs from 'dayjs';
 import s from './SearchBar.module.scss'
-const SearchBar = ({config}) => {
-    const formik = useFormik(config)
+const SearchBar = ({className}) => {
+    const formik = useFormik(formikSearchBar)
     const [personOptions,
         setPersonOptions] = useState([
         {
@@ -29,7 +30,7 @@ const SearchBar = ({config}) => {
         formik.setFieldValue("dates", value)
     }
     return (
-        <form onSubmit={formik.handleSubmit} className={s.searchbar}>
+        <form onSubmit={formik.handleSubmit} className={`${s.searchbar} ${className ? className : ""}`}>
             <Input
                 name='destination'
                 value={formik.values.destination}
