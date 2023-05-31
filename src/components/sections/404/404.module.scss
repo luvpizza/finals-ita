@@ -1,0 +1,30 @@
+@import "@/styles/variables.scss";
+
+.not_found{
+    @include flex-centered;
+    flex-direction: column;
+    align-self: center;
+}
+.nf{
+    &__errorcode{
+        color: $not-quite-white;
+        font-size: 96px;
+        text-shadow: 4px 4px $primary-blue;
+    }
+    &__description{ 
+        color: $primary-blue;
+        font-weight: 500;
+    }
+    &__link{
+        font-weight: 500;
+        margin-top: 60px;
+        color: $primary-blue;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: 1px solid $primary-blue;
+        &:hover{
+            border: 1px solid $primary-blue-opacity-30;
+            color: $primary-blue-opacity-30;
+        }
+    }
+}

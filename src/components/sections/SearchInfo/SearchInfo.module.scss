@@ -23,6 +23,8 @@
         gap: 20px;
     }
     &__card{
+        color: #fff;
+        @include flex-centered;
         height: 250px;
         border-radius: 10px;
         background: $primary-blue;

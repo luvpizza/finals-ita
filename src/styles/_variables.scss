@@ -6,6 +6,7 @@ $error: rgb(255, 30, 30);
 $not-quite-white: rgb(250, 250, 250);
 $width-def: 1100px;
 $outline-def: #d9d9d9;
+
 @mixin flex-centered {
     display: flex;
     justify-content: center;

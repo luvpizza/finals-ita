@@ -1,0 +1,22 @@
+@import "@/styles/variables.scss";
+
+.hotel{
+    // @include flex-centered;
+    // flex-direction: column;
+    background: $not-quite-white;
+    min-height: 90vh;
+    padding: 80px 0;
+    &__container{
+        @include container;
+    }
+    &__main{
+
+    }
+    &__credentials{
+
+    }
+    &__title{
+        font-size: 36px;
+
+    }
+}
