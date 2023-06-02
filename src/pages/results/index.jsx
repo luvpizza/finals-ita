@@ -48,6 +48,9 @@ const Results = ({
                                 ? resultHotels.map((hotel) =>< SearchResult key = {
                                     hotel.id
                                 }
+                                id = {
+                                    hotel.id
+                                }
                                 title = {
                                     hotel.title
                                 } 

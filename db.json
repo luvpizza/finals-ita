@@ -124,45 +124,71 @@
             "id": 274,
             "title": "Rotschild Hotel",
             "price": 12200,
-            "photos_url": ["https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg"],
+            "photos_url": ["https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg", "https://thumbs.dreamstime.com/b/beautiful-hotel-room-25954964.jpg", "https://thumbs.dreamstime.com/b/beautiful-hotel-room-25954964.jpg"],
             "location": {
                 "city": "Бишкек",
-                "lon_lat": [74.6070, 42.8765],
+                "lon_lat": [
+                    74.6070, 42.8765
+                ],
                 "full": "Бишкек, ул. Ленина, здание 14"
             },
-            "reviews": [
-                {
-                    "firstName": "Shannon",
-                    "rating": 3,
-                    "review_text": "Отель имеет прекрасное местоположение и хороший сервис, но номера могли бы быть чище. (The hotel has a great location and good service, but the rooms could be cleaner.)"
-                }, {
-                    "firstName": "John",
-                    "rating": 4,
-                    "review_text": "Lovely hotel with spacious rooms and a great city view. Highly recommended! (Прекрасный отель с просторными номерами и отличным видом на город. Рекомендую!)"
-                }
+            "rating": {
+                "overall": 3.5,
+                "reviews": [
+                    {
+                        "firstName": "Shannon",
+                        "rating": 3,
+                        "review_text": "Отель имеет прекрасное местоположение и хороший сервис, но номера могли бы быть чище. (The hotel has a great location and good service, but the rooms could be cleaner.)"
+                    }, {
+                        "firstName": "John",
+                        "rating": 4,
+                        "review_text": "Lovely hotel with spacious rooms and a great city view. Highly recommended! (Прекрасный отель с просторными номерами и отличным видом на город. Рекомендую!)"
+                    }
+                ]
+            },
+            "features": [
+                "Wi-Fi",
+                "Удобная парковка",
+                "Бассейн",
+                "Спа-центр",
+                "Ресторан",
+                "Фитнес-зал"
             ]
         }, {
             "id": 521,
             "title": "Sunny Retreat",
             "price": 8500,
             "photos_url": [
-                "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg", "https://www.example.com/pic3.jpg"
+                "https://www.newhavenhotel.com/resourcefiles/room-types/newhavenhotel-home-rooms-executive-king-with-sleeper-sofa1.jpg", "https://www.example.com/pic3.jpg", "https://thumbs.dreamstime.com/b/beautiful-hotel-room-25954964.jpg"
             ],
             "location": {
                 "city": "Бишкек",
-                "lon_lat": [74.5826, 42.8584],
+                "lon_lat": [
+                    74.5826, 42.8584
+                ],
                 "full": "Бишкек, ул. Кочкорбаева, 14/2"
             },
-            "reviews": [
-                {
-                    "firstName": "Shannon",
-                    "rating": 4,
-                    "review_text": "Had a great stay at this hotel! Cozy rooms and excellent service. (Отличный отдых в этом отеле! Уютные номера и отличный сервис.)"
-                }, {
-                    "firstName": "Emily",
-                    "rating": 5,
-                    "review_text": "Excellent place to stay. Great value for the price. (Превосходное место для отдыха. Отличное соотношение цены и качества.)"
-                }
+            "rating": {
+                "overall": 4.5,
+                "reviews": [
+                    {
+                        "firstName": "Shannon",
+                        "rating": 4,
+                        "review_text": "Had a great stay at this hotel! Cozy rooms and excellent service. (Отличный отдых в этом отеле! Уютные номера и отличный сервис.)"
+                    }, {
+                        "firstName": "Emily",
+                        "rating": 5,
+                        "review_text": "Excellent place to stay. Great value for the price. (Превосходное место для отдыха. Отличное соотношение цены и качества.)"
+                    }
+                ]
+            },
+            "features": [
+                "Wi-Fi",
+                "Удобная парковка",
+                "Бассейн",
+                "Спа-центр",
+                "Ресторан",
+                "Фитнес-зал"
             ]
         }
     ]

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import s from "./SearchResult.module.scss"
@@ -31,7 +32,7 @@ const SearchResult = ({
             </div>
             <div className={s.hotel__pricing}>
                 <h2 className={s.hotel__price}>{price} сом</h2>
-                <button className={s.hotel__btn_choose}>Выбрать</button>
+                <Link href={`/hotel/${id }`} className={s.hotel__btn_choose}>Выбрать</Link>
             </div>
         </div>
     );

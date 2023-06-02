@@ -1,27 +1,22 @@
-@import "./../../../styles/variables";
+@import "@/styles/variables";
 
 .partnership {
+    height: 400px;
     padding: 80px 0;
-    background: $lighter-blue;
+    background: linear-gradient(0deg, rgba(106, 146, 198, 0.652), rgba(106, 146, 198, 0.652)), url('./../../../assets/images/partners__bg.jpg') center/cover;
     color: #fff;
-    &__grid {
-        display: grid;
-        grid-template-columns: 3fr 1.5fr;
+    &__title{
+        font-size: 32px;
     }
-    &__description{
-
+    &__text{
+        margin-top: 20px;
+        letter-spacing: 1px;
     }
-    &__img{
-        // height: 450px;
-        // background: url("./../../../assets/images/landing-stroked.jpg") center/cover;
-        // box-shadow: 7px 7px 10px 2px $primary-blue-opacity-30;
-        // transition: .1s;
-        // &:hover{
-        //     transform: scale(1.01);
-        //     box-shadow: 7px 7px 10px 2px $primary-blue;
-        // }
+    &__grid{
+        text-align: center
     }
 }
 .container {
-    @include container
+    @include container;
+    @include flex-centered;
 }

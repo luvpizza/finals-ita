@@ -10,9 +10,6 @@ const Partnership = () => {
                         <p className={s.partnership__text}>Регистрируйте свой отель в нашей системе и получите доступ
                         к обширной базе клиентов нашего сервиса</p>
                     </div>
-                    <div className={s.partnership__img}>
-                        123
-                    </div>
                 </div>
             </div>
         </section>

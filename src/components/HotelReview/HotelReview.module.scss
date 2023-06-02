@@ -1,0 +1,43 @@
+@import "@/styles/variables.scss";
+
+.user {
+    &__review {
+        margin-top: 20px;
+        border-bottom: 1px solid lightgray;
+        padding: 20px 15px;
+        width: 800px;
+    }
+    &__name {
+        font-size: 20px;
+    }
+    &__credentials {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        & > img {
+            & > svg {
+                fill: #000;
+            }
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
+.review {
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+    &__text {
+        margin-top: 15px;
+        font-size: 16px;
+        // font-weight: 500;
+        color: rgb(121, 121, 121);
+    }
+}
