@@ -1,18 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {mockGetSearchResults} from '@/api/mock/mockGetSearchResults';
+import {formikSearchBar} from '@/config/formik/formikSearchBar';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import ResultsBanner from '@/components/sections/ResultsBanner/ResultsBanner';
-
-import s from "./results.module.scss"
 import ResultsMap from '@/components/UI/maps/ResultsMap/ResultsMap';
 import SearchBar from '@/components/SearchBar/SearchBar';
-import {formikSearchBar} from '@/config/formik/formikSearchBar';
 import SearchResult from '@/components/SearchResult/SearchResult';
 
-const Results = ({
-    city = "Бишкек"
-}) => {
+import s from "./results.module.scss"
+const Results = ({ city = "Бишкек" }) => {
     // mock
     const [resultHotels,
         setResultHotels] = useState([]);
@@ -53,9 +50,11 @@ const Results = ({
                                 }
                                 title = {
                                     hotel.title
-                                } 
+                                }
                                 mainImageURL = {
-                                    hotel.photos_url.length ? hotel.photos_url[0] : null
+                                    hotel.photos_url.length
+                                        ? hotel.photos_url[0]
+                                        : null
                                 }
                                 rating = {
                                     hotel.reviews.rating
@@ -68,10 +67,9 @@ const Results = ({
                                 }
                                 price = {
                                     hotel.price
-                                }
-                                />)
+                                } />)
                                 : "Результатов нет"
-            }
+}
                         </div>
                         {isDataFetched && (<ResultsMap
                             className={s.results__map}

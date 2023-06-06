@@ -1,16 +1,16 @@
 import React, {useEffect} from 'react';
-import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Header/Header';
-import heartSVG from '@/assets/icons/heart.svg'
 import {mockGetHotel} from '@/api/mock/mockGetHotel';
 import {useRouter} from 'next/router';
 import {useState} from 'react';
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/Header';
 
-import s from './hotel.module.scss'
 import NotFound from '@/components/sections/404/404';
 import Link from 'next/link';
 import HotelMap from '@/components/UI/maps/HotelMap/HotelMap';
 import HotelReview from '@/components/HotelReview/HotelReview';
+
+import s from './hotel.module.scss'
 const HotelByID = () => {
     const router = useRouter();
     const {id} = router.query;

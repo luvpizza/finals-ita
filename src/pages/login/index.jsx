@@ -1,9 +1,10 @@
 import React from 'react';
-import s from "./login.module.scss"
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import LoginForm from '@/components/forms/LoginForm/LoginForm';
 import {formikLogin} from '@/config/formik/formikLogin';
+
+import s from "./login.module.scss"
 const Login = () => {
     return (
         <div>
