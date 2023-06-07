@@ -46,7 +46,7 @@ const LoginForm = () => {
                 messageApi.open({type: 'success', content: 'Вы успешно вошли в аккаунт'});
             } catch (error) {
                 console.error('Login failed:', error);
-                messageApi.open({type: 'error', content: 'Ошибка. Пользователь не найден'});
+                messageApi.open({type: 'error', content: 'Ошибка. Проверьте правильность введенных данных'});
             }
         },
         validationSchema: Yup.object({

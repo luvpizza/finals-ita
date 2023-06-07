@@ -21,6 +21,9 @@
     &__photos {
         margin-top: 20px;
     }
+    &__rooms{
+        margin-top: 20px;
+    }
 }
 .photos {
     &__cards {
@@ -49,5 +52,26 @@
     &__btns{
         display: flex;
         gap: 10px;
+    }
+}
+.rooms{
+    &__list{
+        background: $not-quite-white;
+        width: max-content;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+.availability{
+    &__red{
+        color: red;
+    }
+    &__green{
+        color: rgb(66, 216, 98);
     }
 }

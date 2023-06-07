@@ -153,13 +153,15 @@
                     "type": "Двухместный",
                     "maxPeople": 2,
                     "availability": true,
-                    "price": 2500
+                    "price": 2500,
+                    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-s/03/29/b8/9e/casa-real-hotel.jpg"
                 }, {
                     "id": 102,
                     "type": "Апартаменты",
                     "maxPeople": 6,
                     "availability": true,
-                    "price": 6000
+                    "price": 6000,
+                    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-s/03/29/b8/9e/casa-real-hotel.jpg"
                 }
             ],
             "features": [
@@ -204,19 +206,22 @@
                     "type": "Стандарт",
                     "maxPeople": 2,
                     "availability": true,
-                    "price": 2200
+                    "price": 2200,
+                    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-s/03/29/b8/9e/casa-real-hotel.jpg"
                 }, {
                     "id": 456,
                     "type": "Люкс",
                     "maxPeople": 4,
                     "availability": true,
-                    "price": 4000
+                    "price": 4000,
+                    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-s/03/29/b8/9e/casa-real-hotel.jpg"
                 }, {
                     "id": 789,
                     "type": "Семейный",
                     "maxPeople": 3,
                     "availability": false,
-                    "price": 3000
+                    "price": 3000,
+                    "photo_url": "https://media-cdn.tripadvisor.com/media/photo-s/03/29/b8/9e/casa-real-hotel.jpg"
                 }
             ],
             "features": [
