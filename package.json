@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --w db.json --port 5001 --d 350"
+    "json-server": "json-server --w db.json --port 5001 --d 500"
   },
   "dependencies": {
     "@2gis/mapgl": "^1.36.0",

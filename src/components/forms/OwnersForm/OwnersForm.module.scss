@@ -1,0 +1,38 @@
+@import "@/styles/variables.scss";
+
+.owners {
+    &__form {
+        background: #fff;
+        padding: 16px;
+        border-radius: 10px;
+    }
+}
+.owner {
+    &__data {
+        margin-top: 50px;
+    }
+    &__credentials {
+        display: flex;
+    }
+    &__hotels {
+        margin-top: 20px;
+    }
+}
+.hotel {
+    &__link {
+        color: rgb(11, 117, 255);
+        border-bottom: 1px dotted rgb(11, 117, 255);
+    }
+}
+.edit {
+    &__item {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__btns {
+        display: flex;
+        gap: 10px;
+    }
+}

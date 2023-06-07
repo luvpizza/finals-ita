@@ -123,8 +123,9 @@
         {
             "id": 274,
             "title": "Rotschild Hotel",
-            "price": 12200,
-            "photos_url": ["https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg", "https://thumbs.dreamstime.com/b/beautiful-hotel-room-25954964.jpg", "https://thumbs.dreamstime.com/b/beautiful-hotel-room-25954964.jpg"],
+            "photos_url": [
+                "https://static.theprint.in/wp-content/uploads/2022/10/Hotel.jpg", "https://thumbs.dreamstime.com/b/beautiful-hotel-room-25954964.jpg", "https://thumbs.dreamstime.com/b/beautiful-hotel-room-25954964.jpg"
+            ],
             "location": {
                 "city": "Бишкек",
                 "lon_lat": [
@@ -146,6 +147,21 @@
                     }
                 ]
             },
+            "rooms": [
+                {
+                    "id": 101,
+                    "type": "Двухместный",
+                    "maxPeople": 2,
+                    "availability": true,
+                    "price": 2500
+                }, {
+                    "id": 102,
+                    "type": "Апартаменты",
+                    "maxPeople": 6,
+                    "availability": true,
+                    "price": 6000
+                }
+            ],
             "features": [
                 "Wi-Fi",
                 "Удобная парковка",
@@ -182,6 +198,27 @@
                     }
                 ]
             },
+            "rooms": [
+                {
+                    "id": 123,
+                    "type": "Стандарт",
+                    "maxPeople": 2,
+                    "availability": true,
+                    "price": 2200
+                }, {
+                    "id": 456,
+                    "type": "Люкс",
+                    "maxPeople": 4,
+                    "availability": true,
+                    "price": 4000
+                }, {
+                    "id": 789,
+                    "type": "Семейный",
+                    "maxPeople": 3,
+                    "availability": false,
+                    "price": 3000
+                }
+            ],
             "features": [
                 "Wi-Fi",
                 "Удобная парковка",
@@ -189,6 +226,21 @@
                 "Спа-центр",
                 "Ресторан",
                 "Фитнес-зал"
+            ]
+        }
+    ],
+    "owners": [
+        {
+            "id": 1,
+            "firstName": "Ичиго",
+            "lastName": "Куросаки",
+            "dateOfBirth": "5 мая 1985",
+            "dateOfRegister": "2 июля 2018",
+            "hotels": [
+                {
+                    "id": 521,
+                    "title": "Rotschild Hotel"
+                }
             ]
         }
     ]

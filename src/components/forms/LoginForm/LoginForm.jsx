@@ -10,10 +10,12 @@ import {setToken} from '@/store/reducers/authSlice';
 import {message} from 'antd';
 import {Spin} from 'antd';
 import {LoadingOutlined} from '@ant-design/icons';
+import { useRouter } from 'next/router';
 
 import s from './LoginForm.module.scss';
 
 const LoginForm = () => {
+    const router = useRouter()
     const [messageApi,
         contextHolder] = message.useMessage();
     const antIcon = <LoadingOutlined style={{
@@ -40,6 +42,7 @@ const LoginForm = () => {
                 const result = await login(credentials);
                 const token = result.data.token;
                 dispatch(setToken(token));
+                router.push("/search")
                 messageApi.open({type: 'success', content: 'Вы успешно вошли в аккаунт'});
             } catch (error) {
                 console.error('Login failed:', error);

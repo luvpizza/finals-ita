@@ -19,7 +19,6 @@ const Results = ({ city = "Бишкек" }) => {
         setIsDataFetched] = useState(false);
 
     useEffect(() => {
-        console.log("test");
         if (typeof window !== 'undefined') {
             mockGetSearchResults().then((res) => {
                 console.log(res);

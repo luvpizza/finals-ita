@@ -1,0 +1,53 @@
+@import "@/styles/variables.scss";
+
+.hotel {
+    &__form {
+        background: #fff;
+        padding: 16px;
+        border-radius: 10px;
+    }
+    &__data {
+        margin-top: 50px;
+    }
+    &__location {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__features {
+        margin-top: 20px;
+    }
+    &__photos {
+        margin-top: 20px;
+    }
+}
+.photos {
+    &__cards {
+        background: $not-quite-white;
+        width: max-content;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+.title__edit{
+    display: flex;
+}
+.edit{
+    &__item{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction:column;
+        gap: 5px;
+    }
+    &__btns{
+        display: flex;
+        gap: 10px;
+    }
+}

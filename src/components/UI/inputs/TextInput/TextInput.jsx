@@ -5,7 +5,7 @@ const TextInput = ({
     ...props
 }) => {
     return (
-    <input className={`${s.text__input} ${className ? className: ""}`.trim()} {...props}/>
+        <input className={`${s.text__input} ${className ? className: ""}`.trim()} {...props}/>
     );
 };
 
