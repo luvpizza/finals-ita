@@ -11,6 +11,7 @@ import HotelMap from '@/components/UI/maps/HotelMap/HotelMap';
 import HotelReview from '@/components/HotelReview/HotelReview';
 
 import s from './hotel.module.scss'
+import { Button } from 'antd';
 const HotelByID = () => {
     const router = useRouter();
     const {id} = router.query;
@@ -122,6 +123,21 @@ const HotelByID = () => {
                                 hotelData.features.map(item => <ul key={item}>• {item}</ul>)    
                             : "Информация о предоставленных услугах не найдена"}
                             </div>
+                        </div>
+                        <div className={s.hotel__rooms}>
+                            {hotelData.rooms && hotelData.rooms.map((room, idx)=>{return <div className={s.hotel__room} key={idx}>
+                                <div className={s.room__img}>
+                                    <img src={room.photo_url} alt="" />
+                                </div>
+                                <div className={s.room__bottom}>
+                                    <div className={s.room__description}>
+                                        <h4>{room.type}</h4>
+                                        <p>Вместительность: {room.maxPeople} </p>
+                                        <h4>{room.availability ? "Доступен" : "Занят"}</h4>
+                                        {room.availability && <Button>Забронировать</Button>}
+                                    </div>
+                                </div>
+                            </div>})}
                         </div>
                         <div className={s.hotel__reviews} id="reviews">
                             <h2 className={s.reviews__title}>Отзывы</h2>

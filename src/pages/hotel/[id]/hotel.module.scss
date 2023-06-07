@@ -67,6 +67,38 @@
     &__reviews{
         margin-top: 80px;
     }
+    &__room{
+        &s{
+            margin: 0 auto;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        display: grid;
+        grid-template-rows: 1fr 0.6fr;
+        border: 1px solid $not-quite-white;
+        border-radius: 10px;
+
+    }
+}
+.room{
+    &__img{
+        height: 200px;
+        width: auto;
+        & > img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__description{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
 .reviews {
     &__link {
