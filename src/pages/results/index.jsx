@@ -10,7 +10,7 @@ import SearchResult from '@/components/SearchResult/SearchResult';
 
 import s from "./results.module.scss"
 const Results = ({ city = "Бишкек" }) => {
-    // mock
+
     const [resultHotels,
         setResultHotels] = useState([]);
     const [mapCenter,

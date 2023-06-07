@@ -1,0 +1,17 @@
+@import "@/styles/variables.scss";
+
+.partner{
+    &__form{
+        background: #fff;
+        padding: 16px;
+        border-radius: 10px;
+    }
+}
+.hotel{
+    &__selector{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+}

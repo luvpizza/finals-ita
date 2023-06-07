@@ -5,8 +5,8 @@ export const hotelSearchApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5001' }),
   endpoints: (builder) => ({
     getSearchResults: builder.query({
-      query: () => '/results?id=274',
-    }),
+      query: () => '/results'
+    })
   }),
 });
 

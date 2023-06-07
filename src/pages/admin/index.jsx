@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer/Footer';
 import HotelForm from '@/components/forms/HotelForm/HotelForm';
 import OwnersForm from '@/components/forms/OwnersForm/OwnersForm';
 import Header from '@/components/Header/Header';
